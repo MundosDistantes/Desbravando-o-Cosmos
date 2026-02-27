@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ceres - Planeta Anão</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Roboto, Arial, sans-serif; }
+    body { min-height: 100vh; background: linear-gradient(180deg, #0b0f1a, #05070d); color: #e6e6e6; padding: 20px; }
+    main { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 {
+  font-size: 2.5rem;
+  color: #aad1ff;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+    .top-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.top-image img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+    .referencia { text-align: center; font-size: 0.85rem; color: #9a9a9a; margin-bottom: 30px; }
+    section { margin-bottom: 30px; }
+    section h2 { font-size: 1.8rem; color: #aad1ff; margin-bottom: 15px; }
+    section p { line-height: 1.7; color: #d4d4d4; margin-bottom: 15px; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 8px; }
+    .referencias li { font-size: 0.9rem; color: #cfcfcf; margin-bottom: 8px; }
+    a { color: #9bbcff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Botão Voltar */
+    .botao-voltar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .botao-voltar button {
+      background: linear-gradient(45deg, #aad1ff, #5a9eff);
+      color: #05070d;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botao-voltar button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Ceres - Planeta Anão</h1>
+  </header>
+
+ <!-- Imagem Topo -->
+<div class="top-image">
+  <img
+    src="ceres.webp"
+    loading="lazy"
+    decoding="async"
+    width="600"
+    height="600"
+    alt="Ceres, planeta anão">
+</div>
+
+<div class="referencia">
+  Fonte: NASA/JPL-Caltech/UCLA/MPS/DLR/IDA (missão Dawn). Disponível em:
+  <a href="https://commons.wikimedia.org/wiki/File:Color_global_view_of_Ceres_-_Oxo_and_Haulani_craters.png"
+     target="_blank" rel="noopener noreferrer">
+    commons.wikimedia.org
+  </a>. Acesso em: 26 dez. 2025.
+</div>
+
+  <!-- Introdução e História -->
+  <section>
+    <h2>Introdução e História</h2>
+    <p>Ceres é um planeta anão localizado no cinturão de asteroides entre Marte e Júpiter, sendo o maior objeto nessa região e o primeiro a ser descoberto em 1º de janeiro de 1801 pelo astrônomo italiano Giuseppe Piazzi. </p>
+    <p>Inicialmente classificado como planeta, depois asteroide, e finalmente definido como planeta anão pela União Astronômica Internacional em 2006, Ceres tem sido objeto de interesse científico por sua composição incomum e seu papel na história da formação do Sistema Solar. </p>
+  </section>
+
+  <!-- Características Físicas -->
+  <section>
+    <h2>Características Físicas: Diâmetro, Massa e Órbita</h2>
+    <p>Ceres tem um diâmetro de aproximadamente 940 km, sendo o maior corpo do cinturão de asteroides e representando cerca de um terço da massa total desse cinturão. </p>
+    <p>Ele orbita o Sol a uma distância média de cerca de 2,8 unidades astronômicas e completa uma volta em torno da estrela em cerca de 4,6 anos terrestres. </p>
+    <p>Uma rotação completa no seu eixo leva pouco menos de 9 horas, resultando em um dia curto em comparação com muitos outros corpos do Sistema Solar. </p>
+  </section>
+
+  <!-- Geologia -->
+  <section>
+    <h2>Geologia</h2>
+    <p>Ceres possui uma superfície marcada por inúmeras crateras, mas surpreendentemente poucas delas são extremamente grandes, sugerindo processos geológicos capazes de “apagar” grandes impactos ao longo do tempo. </p>
+    <p>A composição superficial inclui áreas com depósitos brilhantes de sais e gelo, especialmente dentro de crateras como Occator e Haulani, que podem ser produtos de atividade criovolcânica ou de movimentos de brinas salgadas. </p>
+    <p>Essas características apontam para uma história geológica ativa, com evidências de que Ceres pode ainda liberar brinas internamente e apresentar fenômenos semelhantes a vulcões de gelo. </p>
+  </section>
+
+  <!-- Missões Espaciais -->
+  <section>
+    <h2>Missões Espaciais</h2>
+    <p>A principal missão que estudou Ceres foi a espaçonave Dawn, da NASA, que entrou em órbita do planeta anão em março de 2015 após visitar o asteroide Vesta. </p>
+    <p>Dawn forneceu imagens detalhadas da superfície, mapeou sua composição e revelou características como os pontos brilhantes nas crateras e possíveis sinais de atividade geológica recente. </p>
+  </section>
+
+  <!-- Atmosfera e Exosfera -->
+  <section>
+    <h2>Atmosfera e Exosfera</h2>
+    <p>Ceres possui uma exosfera extremamente tênue, com vestígios de vapor de água detectados em algumas regiões, possivelmente liberados pela sublimação dos gelos próximos à superfície ou por atividades internas. </p>
+    <p>Essa exosfera não é como uma atmosfera densa, mas representa uma camada muito fraca de partículas gasosas ao redor do planeta anão. </p>
+  </section>
+
+  <!-- Potencial de Habitabilidade -->
+  <section>
+    <h2>Potencial de Habitabilidade</h2>
+    <ul>
+      <li>💧 <strong>Água Líquida:</strong> Não há prova de água líquida presente hoje, mas há evidências de água e gelo em grande quantidade. </li>
+      <li>⚡ <strong>Fonte de Energia:</strong> Energia interna moderada no passado pode ter criado condições temporárias favoráveis. </li>
+      <li>🧬 <strong>Ingredientes Químicos:</strong> Compostos inorgânicos e minerais que podem ter suportado química pré-biótica no passado. </li>
+    </ul>
+    <p>Pesquisas indicam que Ceres pode ter tido condições relativamente “habitáveis” em sua história antiga, com água líquida e energia disponível por longos períodos, embora não haja evidências de vida. </p>
+  </section>
+
+  <!-- Curiosidades -->
+  <section>
+    <h2>Curiosidades</h2>
+    <p>Ceres contém depósitos brilhantes visíveis em várias crateras, que são alguns dos alvos de estudo mais intrigantes da missão Dawn. </p>
+    <p>O planeta anão tem massa suficiente para mantê-lo em forma quase esférica, diferenciando-o da maioria dos asteroides do cinturão. </p>
+    <p>Com tanta água congelada, Ceres é um dos corpos mais ricos em água do Sistema Solar interno, possivelmente com mais água total do que a Terra em termos de volume. </p>
+  </section>
+
+  <!-- Origem do Nome -->
+  <section>
+    <h2>Origem do Nome</h2>
+    <p>Ceres recebeu seu nome em homenagem a Ceres, a deusa romana da agricultura, grãos e colheitas, refletindo a importância simbólica da fertilidade e da abundância que a humanidade associava à agricultura desde a antiguidade. </p>
+    <p>A escolha do nome também segue a tradição de usar figuras mitológicas para designar objetos celestes, conectando nossa história cultural à exploração astronômica.</p>
+  </section>
+
+  <!-- Referências -->
+  <section>
+    <h2>Referências</h2>
+    <ul class="referencias">
+      <li>NASA. Ceres Facts. Disponível em: <a href="https://science.nasa.gov/dwarf-planets/ceres/facts/" target="_blank">https://science.nasa.gov/dwarf-planets/ceres/facts/</a>. Acesso em: 26 dez. 2025.</li>
+      <li>Wikipedia. Ceres (planeta anão). Disponível em: <a href="https://pt.wikipedia.org/wiki/Ceres_(planeta_an%C3%A3o)" target="_blank">https://pt.wikipedia.org/wiki/Ceres_(planeta_an%C3%A3o)</a>. Acesso em: 26 dez. 2025.</li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- Botão Voltar -->
+<div class="botao-voltar">
+  <button onclick="history.back()">← Voltar</button>
+</div>
+
+</body>
+</html>

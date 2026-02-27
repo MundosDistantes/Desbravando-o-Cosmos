@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dione - Lua de Saturno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Roboto, Arial, sans-serif; }
+    body { min-height: 100vh; background: linear-gradient(180deg, #0b0f1a, #05070d); color: #e6e6e6; padding: 20px; }
+    main { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 { font-size: 2.5rem; color: #aad1ff; font-weight: bold; margin-bottom: 40px; }
+    .top-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.top-image img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+    .referencia { text-align: center; font-size: 0.85rem; color: #9a9a9a; margin-bottom: 30px; }
+    section { margin-bottom: 30px; }
+    section h2 { font-size: 1.8rem; color: #aad1ff; margin-bottom: 15px; }
+    section p { line-height: 1.7; color: #d4d4d4; margin-bottom: 15px; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 8px; }
+    .referencias li { font-size: 0.9rem; color: #cfcfcf; margin-bottom: 8px; }
+    a { color: #9bbcff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Botão Voltar */
+    .botao-voltar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .botao-voltar button {
+      background: linear-gradient(45deg, #aad1ff, #5a9eff);
+      color: #05070d;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botao-voltar button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Dione - Lua de Saturno</h1>
+  </header>
+
+  <!-- Imagem Topo -->
+<div class="top-image">
+  <img
+    src="dione.webp"
+    loading="lazy"
+    decoding="async"
+    width="600"
+    height="600"
+    alt="Dione, lua de Saturno">
+</div>
+
+<div class="referencia">
+  Fonte: NASA/JPL-Caltech/Space Science Institute (Cassini ISS). Disponível em:
+  <a href="https://commons.wikimedia.org/wiki/File:N00037561.jpg" target="_blank" rel="noopener noreferrer">
+    commons.wikimedia.org
+  </a>. Acesso em: 26 dez. 2025.
+</div>
+
+  <!-- Introdução e História -->
+  <section>
+    <h2>Introdução e História</h2>
+    <p>Dione é uma das luas de Saturno, descoberta em 1684 pelo astrônomo italiano Giovanni Domenico Cassini. Ela é a quarta maior lua do planeta e possui uma superfície gelada relativamente antiga e complexa, com muitas crateras de impacto e regiões com terrenos fraturados. </p>
+    <p>Dione foi observada pela primeira vez de perto pela sonda Voyager 1 em 1980, mas as informações mais detalhadas vieram da missão Cassini, que realizou múltiplos sobrevoos da lua ao longo dos anos 2000 e 2010. </p>
+  </section>
+
+  <!-- Características Físicas -->
+  <section>
+    <h2>Características Físicas: Diâmetro, Massa e Órbita</h2>
+    <p>Dione tem cerca de 1.123 km de diâmetro, o que a torna uma das maiores luas geladas de Saturno. </p>
+    <p>Ela orbita Saturno em aproximadamente 2,74 dias terrestres, sempre com o mesmo lado voltado para o planeta, em um movimento conhecido como rotação síncrona. </p>
+    <p>A densidade de Dione indica uma composição misturada de gelo de água e materiais rochosos, semelhante a outras luas geladas de Saturno. </p>
+  </section>
+
+  <!-- Geologia -->
+  <section>
+    <h2>Geologia</h2>
+    <p>A superfície de Dione é fortemente craterada, com grandes áreas de terreno antigo agravadas por impactos ao longo de bilhões de anos. </p>
+    <p>Além das crateras, a lua apresenta “terreno wispy” — faixas brilhantes e finas causadas por fraturas e penhascos de gelo que cortam as planícies mais antigas. Essas formações sugerem que Dione passou por atividade tectônica no passado. </p>
+    <p>Estudos recentes indicam que Dione pode abrigar um oceano subterrâneo de água sob sua crosta de gelo, tornando-a um dos chamados “mundos oceânicos”. </p>
+  </section>
+
+ <!-- Missões Espaciais -->
+  <section>
+    <h2>Missões Espaciais</h2>
+    <p>Dione foi estudada principalmente por sondas que visitaram o sistema de Saturno, sendo uma das luas observadas de perto pelas missões Voyager 1 e 2. Essas missões forneceram as primeiras imagens detalhadas da superfície, revelando crateras, fraturas e regiões brilhantes de gelo. </p>
+    <p>Posteriormente, a missão Cassini realizou observações prolongadas de Saturno e suas luas, incluindo Dione. Cassini forneceu informações sobre sua composição, analisou a estrutura das fraturas lineares e estudou interações com o campo magnético de Saturno. </p>
+    <p>Essas missões ajudaram a entender melhor a história geológica de Dione, seus possíveis processos internos e a dinâmica de suas superfícies geladas. Futuras missões ainda poderão aprofundar o conhecimento sobre sua composição e potencial para fenômenos criovolcânicos. </p>
+  </section>
+
+  <!-- Atmosfera e Exosfera -->
+  <section>
+    <h2>Atmosfera e Exosfera</h2>
+    <p>Dione não possui uma atmosfera densa como a Terra. Em vez disso, mede-se uma exosfera extremamente tênue composta principalmente por íons de oxigênio, resultado da interação da superfície gelada com partículas energéticas no espaço. </p>
+    <p>Essa exosfera é tão leve que as partículas escapam rapidamente para o espaço, não formando uma camada gasosa significativa. </p>
+  </section>
+
+  <!-- Potencial de Habitabilidade -->
+  <section>
+    <h2>Potencial de Habitabilidade</h2>
+    <ul>
+      <li>💧 <strong>Água Líquida:</strong> A possibilidade de um oceano subterrâneo torna Dione mais interessante do que muitas outras luas de Saturno.</li>
+      <li>⚡ <strong>Fonte de Energia:</strong> A energia disponível é limitada e depende de processos internos lentos.</li>
+      <li>🧬 <strong>Ingredientes Químicos:</strong> A presença de gelo e materiais rochosos pode oferecer blocos básicos para química complexa.</li>
+    </ul>
+    <p>Embora ainda não seja considerada um dos principais candidatos à vida, a possível presença de um oceano interno faz de Dione um objeto intrigante para estudos futuros de habitabilidade. </p>
+  </section>
+
+  <!-- Curiosidades -->
+  <section>
+    <h2>Curiosidades</h2>
+    <p>Dione tem dois satélites co-orbitais em seus pontos lagrangianos, chamados Helene e Polydeuces, que acompanham sua trajetória ao redor de Saturno. </p>
+    <p>“Terreno wispy”, observado pela Cassini, é uma das características mais marcantes de sua superfície. </p>
+    <p>A interação gravitacional entre Dione, Mimas e Encelado contribui para manter as órbitas desses satélites em ressonância estável. </p>
+  </section>
+
+  <!-- Origem do Nome -->
+  <section>
+    <h2>Origem do Nome</h2>
+    <p>Dione recebeu seu nome da mitologia grega, inspirado na titânide Dione, que na tradição clássica era associada a divindades da fertilidade e, em algumas versões, considerada mãe de Afrodite. </p>
+    <p>O nome segue a tradição de nomear as luas de Saturno com personagens ligadas à mitologia clássica, conectando a exploração astronômica às histórias humanas antigas. </p>
+  </section>
+
+<!-- Referências -->
+<section>
+  <h2>Referências</h2>
+  <ul class="referencias">
+    <li>NASA. Dione – Moon of Saturn. Disponível em: 
+      <a href="https://science.nasa.gov/saturn/moons/dione/" target="_blank">
+        https://science.nasa.gov/saturn/moons/dione/
+      </a>. Acesso em: 26 dez. 2025.
+    </li>
+    <li>Wikipedia. Dione (satélite). Disponível em: 
+      <a href="https://pt.wikipedia.org/wiki/Dione_(sat%C3%A9lite)" target="_blank">
+        https://pt.wikipedia.org/wiki/Dione_(sat%C3%A9lite)
+      </a>. Acesso em: 26 dez. 2025.
+    </li>
+  </ul>
+</section>
+
+</main>
+
+<!-- Botão Voltar -->
+<div class="botao-voltar">
+  <button onclick="history.back()">← Voltar</button>
+</div>
+
+</body>
+</html>

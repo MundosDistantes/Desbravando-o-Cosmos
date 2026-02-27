@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tétis - Lua de Saturno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Roboto, Arial, sans-serif; }
+    body { min-height: 100vh; background: linear-gradient(180deg, #0b0f1a, #05070d); color: #e6e6e6; padding: 20px; }
+    main { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 { font-size: 2.5rem; color: #aad1ff; font-weight: bold; margin-bottom: 15px; }
+    .top-image {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.top-image img {
+display: block;
+width: 100%;
+max-width: 600px;
+height: auto;
+margin: 0 auto;
+border-radius: 8px;
+}
+    .referencia { text-align: center; font-size: 0.85rem; color: #9a9a9a; margin-bottom: 30px; }
+    section { margin-bottom: 30px; }
+    section h2 { font-size: 1.8rem; color: #aad1ff; margin-bottom: 15px; }
+    section p { line-height: 1.7; color: #d4d4d4; margin-bottom: 15px; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 8px; }
+    .referencias li { font-size: 0.9rem; color: #cfcfcf; margin-bottom: 8px; }
+    a { color: #9bbcff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Botão Voltar */
+    .botao-voltar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .botao-voltar button {
+      background: linear-gradient(45deg, #aad1ff, #5a9eff);
+      color: #05070d;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botao-voltar button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Tétis - Lua de Saturno</h1>
+  </header>
+
+  <!-- Imagem Topo -->
+<div class="top-image">
+  <img
+    src="tetis.webp"
+    loading="lazy"
+    decoding="async"
+    width="600"
+    height="600"
+    alt="Tétis, lua de Saturno">
+</div>
+
+<div class="referencia">
+  Fonte: NASA/JPL-Caltech (Cassini-Huygens). Disponível em:
+  <a href="https://commons.wikimedia.org/wiki/File:PIA18317-SaturnMoon-Tethys-Cassini-20150411.jpg" target="_blank" rel="noopener noreferrer">
+    commons.wikimedia.org
+  </a>. Acesso em: 26 dez. 2025.
+</div>
+
+  <!-- Introdução e História -->
+  <section>
+    <h2>Introdução e História</h2>
+    <p>Tétis é uma das luas geladas de Saturno, descoberta em 1684 pelo astrônomo Giovanni Domenico Cassini enquanto observava os satélites do planeta. Por muitos anos foi apenas um ponto de luz nos telescópios, até que missões espaciais trouxeram imagens detalhadas de sua superfície. </p>
+    <p>A lua é conhecida por sua superfície brilhante e fortemente marcada por crateras e vales, indicando uma história de impactos antigos e processos que moldaram seu terreno ao longo de bilhões de anos. </p>
+  </section>
+
+  <!-- Características Físicas -->
+  <section>
+    <h2>Características Físicas: Diâmetro, Massa e Órbita</h2>
+    <p>Tétis tem cerca de 1 060 km de diâmetro, sendo a quinta maior lua de Saturno. </p>
+    <p>Ela orbita Saturno a cerca de 295 000 km de distância do centro do planeta e completa uma volta a cada aproximadamente 45,3 horas, travada em rotação síncrona (mostrando sempre a mesma face para Saturno). </p>
+    <p>Sua densidade muito baixa indica que a lua é composta quase inteiramente por gelo de água com apenas uma pequena fração de material rochoso. </p>
+  </section>
+
+  <!-- Geologia -->
+  <section>
+    <h2>Geologia</h2>
+    <p>A superfície de Tétis é dominada por crateras de impacto e longas fraturas. Uma das características mais impressionantes é a cratera Odysseus, com centenas de quilômetros de diâmetro. </p>
+    <p>Outro elemento marcante é o vale Ithaca Chasma, uma enorme fenda que percorre boa parte da circunferência da lua, possivelmente formada por forças internas e expansão do gelo. </p>
+    <p>A superfície muito brilhante evidencia a presença abundante de gelo de água, refletindo grande parte da luz solar que a atinge. </p>
+  </section>
+
+  <!-- Missões Espaciais -->
+  <section>
+    <h2>Missões Espaciais</h2>
+    <p>Tétis foi observada pela primeira vez de perto pelas sondas Voyager 1 e 2 no início dos anos 1980, revelando pela primeira vez detalhes de sua superfície. </p>
+    <p>A missão Cassini, que estudou Saturno e suas luas por mais de uma década, obteve imagens de alta resolução que mostraram as crateras profundas e o grande vale da lua, além de fornecer dados sobre sua composição e características geológicas. </p>
+  </section>
+
+  <!-- Atmosfera e Exosfera -->
+  <section>
+    <h2>Atmosfera e Exosfera</h2>
+    <p>Tétis não possui uma atmosfera significativa. Qualquer gás presente seria extremamente raro e fugaz, não formando uma camada estável ao redor da lua. </p>
+  </section>
+
+  <!-- Potencial de Habitabilidade -->
+  <section>
+    <h2>Potencial de Habitabilidade</h2>
+    <ul>
+      <li>💧 <strong>Água Líquida:</strong> Não há evidências de água líquida; a lua é predominante gelo sólido.</li>
+      <li>⚡ <strong>Fonte de Energia:</strong> Energia interna muito limitada, sem aquecimento por marés significativo.</li>
+      <li>🧬 <strong>Ingredientes Químicos:</strong> A presença de gelo de água fornece blocos básicos, mas não há sinais de química complexa ativa.</li>
+    </ul>
+    <p>Tétis não é considerada um ambiente habitável, mas seu estudo ajuda a entender a evolução de luas geladas e processos de craterização no Sistema Solar. </p>
+  </section>
+
+  <!-- Curiosidades -->
+  <section>
+    <h2>Curiosidades</h2>
+    <p>Tétis tem duas pequenas luas co-orbitais: Telesto à frente e Calipso logo atrás, que compartilham sua órbita em posições estáveis nos pontos de Lagrange. </p>
+    <p>A enorme estrutura de Ithaca Chasma se estende por uma grande parte da lua — uma das maiores fraturas observadas entre luas geladas. </p>
+    <p>A cratera Odysseus ocupa quase metade do diâmetro de Tétis, mostrando o enorme impacto que ela sofreu no passado. </p>
+  </section>
+
+  <!-- Origem do Nome -->
+  <section>
+    <h2>Origem do Nome</h2>
+    <p>Tétis recebeu seu nome da mitologia grega, inspirada na titânide Tétis, filha de Urano e Gaia e esposa do titã Oceano. Ela era considerada a personificação das águas do mundo e mãe de milhares de ninfas dos rios e mares. </p>
+    <p>Assim como outras luas de Saturno, Tétis foi nomeada seguindo a tradição de usar personagens mitológicos clássicos, conectando a exploração do espaço às histórias antigas que marcaram a cultura humana. </p>
+  </section>
+
+  <!-- Referências -->
+  <section>
+    <h2>Referências</h2>
+    <ul class="referencias">
+      <li>NASA. Tethys – Moon of Saturn. Disponível em: <a href="https://science.nasa.gov/saturn/moons/tethys/" target="_blank">https://science.nasa.gov/saturn/moons/tethys/</a>. Acesso em: 26 dez. 2025.</li>
+      <li>Wikipedia. Tétis (lua). Disponível em: <a href="https://pt.wikipedia.org/wiki/T%C3%A9tis_%28sat%C3%A9lite%29" target="_blank">https://pt.wikipedia.org/wiki/T%C3%A9tis_%28sat%C3%A9lite%29</a>. Acesso em: 26 dez. 2025.</li>
+      <li>Britannica. Tethys. Disponível em: <a href="https://www.britannica.com/topic/Tethys" target="_blank">https://www.britannica.com/topic/Tethys</a>. Acesso em: 26 dez. 2025.</li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- Botão Voltar -->
+<div class="botao-voltar">
+  <button onclick="history.back()">← Voltar</button>
+</div>
+
+</body>
+</html>

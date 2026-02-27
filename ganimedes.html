@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ganimedes - Lua de Júpiter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Roboto, Arial, sans-serif; }
+    body { min-height: 100vh; background: linear-gradient(180deg, #0b0f1a, #05070d); color: #e6e6e6; padding: 20px; }
+    main { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 { font-size: 2.5rem; color: #aad1ff; font-weight: bold; margin-bottom: 15px; }
+    .top-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.top-image img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+    .referencia { text-align: center; font-size: 0.85rem; color: #9a9a9a; margin-bottom: 30px; }
+    section { margin-bottom: 30px; }
+    section h2 { font-size: 1.8rem; color: #aad1ff; margin-bottom: 15px; }
+    section p { line-height: 1.7; color: #d4d4d4; margin-bottom: 15px; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 8px; }
+    .referencias li { font-size: 0.9rem; color: #cfcfcf; margin-bottom: 8px; }
+    a { color: #9bbcff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Botão Voltar Fixo */
+    .botao-voltar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .botao-voltar button {
+      background: linear-gradient(45deg, #aad1ff, #5a9eff);
+      color: #05070d;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .botao-voltar button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+<main>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Ganimedes - Lua de Júpiter</h1>
+  </header>
+
+  <!-- Imagem Topo -->
+<div class="top-image">
+  <img
+    src="ganimedes.webp"
+    loading="lazy"
+    decoding="async"
+    width="600"
+    height="600"
+    alt="Ganimedes, lua de Júpiter">
+</div>
+
+<div class="referencia">
+  Fonte: NASA/JPL-Caltech/SwRI/MSSS (Juno). Disponível em:
+  <a href="https://commons.wikimedia.org/wiki/File:Ganymede_-_Perijove_34_Composite.png" target="_blank" rel="noopener noreferrer">
+    commons.wikimedia.org
+  </a>. Acesso em: 24 dez. 2025.
+</div>
+
+  <!-- Conteúdo -->
+  <section>
+    <h2>Introdução e História</h2>
+    <p>Ganimedes é a maior lua de Júpiter e do Sistema Solar, descoberta por Galileo Galilei em 7 de janeiro de 1610. Com um diâmetro de cerca de 5.268 km, Ganimedes é maior até que o planeta Mercúrio. Durante séculos, apenas telescópios revelavam sua superfície brilhante e cheia de crateras, mas missões espaciais modernas, como a sonda Juno, forneceram imagens detalhadas e dados sobre sua composição e atividade geológica.</p>
+  </section>
+
+  <section>
+    <h2>Características Físicas: Diâmetro, Massa e Órbita</h2>
+    <p>Ganimedes tem aproximadamente 5.268 km de diâmetro, tornando-o a maior lua do Sistema Solar.</p>
+    <p>Orbita Júpiter a uma distância média de 1.070.000 km, completando uma volta ao redor do planeta em cerca de 7,15 dias.</p>
+    <p>Sua densidade sugere que é composto de gelo de água e rocha, com um núcleo metálico que pode gerar um campo magnético próprio — uma característica única entre as luas do Sistema Solar.</p>
+  </section>
+
+  <section>
+    <h2>Estrutura Interna e Atividade Geológica</h2>
+    <p>Ganimedes possui uma camada externa de gelo, sob a qual acredita-se que exista um oceano subterrâneo de água líquida, potencialmente maior que todos os oceanos da Terra juntos. A crosta gelada é marcada por crateras antigas e regiões mais jovens com sulcos e falhas, indicando atividade tectônica no passado.</p>
+    <p>Seu núcleo metálico e a presença de gelo em grande escala sugerem que Ganimedes ainda pode ter algum calor interno, gerado por decaimento radioativo e forças de maré, embora sua superfície atualmente seja geologicamente menos ativa que luas como Encélado.</p>
+  </section>
+
+  <section>
+    <h2>Missões Espaciais</h2>
+    <p>Ganimedes foi estudado por múltiplas missões, incluindo as sondas Voyager, Galileo e recentemente Juno, fornecendo informações sobre sua superfície, campo magnético e possíveis oceanos subterrâneos.</p>
+    <ul>
+      <li>Superfície dividida entre regiões antigas e crateradas e sulcos mais jovens;</li>
+      <li>Campo magnético próprio, sugerindo núcleo metálico ativo;</li>
+      <li>Indícios de um oceano subterrâneo sob a crosta de gelo;</li>
+      <li>Composição química do gelo e minerais da superfície analisados por espectrômetros.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Atmosfera e Exosfera</h2>
+    <p>Ganimedes não possui uma atmosfera significativa, mas apresenta uma exosfera muito fina composta principalmente por oxigênio, detectada em pequenas quantidades. Esta camada é extremamente tênue, incapaz de sustentar vida ou reter calor, mas fornece informações sobre processos de interação com o ambiente de Júpiter.</p>
+  </section>
+
+  <section>
+    <h2>Potencial de Habitabilidade</h2>
+    <ul>
+      <li>💧 <strong>Água Líquida:</strong> O oceano subterrâneo de Ganimedes, localizado sob dezenas de quilômetros de gelo, representa um ambiente onde a água líquida pode existir.</li>
+      <li>⚡ <strong>Fonte de Energia:</strong> Possível calor interno gerado pelo núcleo metálico e forças de maré pode fornecer energia para processos químicos complexos.</li>
+      <li>🧬 <strong>Ingredientes Químicos:</strong> Compostos orgânicos e minerais na crosta e no gelo indicam que há os elementos essenciais para reações químicas, semelhantes aos ambientes onde a vida pode surgir.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Curiosidades</h2>
+    <p>Ganimedes é a única lua conhecida com campo magnético próprio.</p>
+    <p>Possui regiões geladas brilhantes e sulcos escuros que indicam atividade tectônica passada.</p>
+    <p>Se seu oceano subterrâneo for confirmado, ele poderia conter mais água do que todos os oceanos da Terra juntos.</p>
+  </section>
+
+  <section>
+    <h2>Origem do Nome</h2>
+    <p>Ganimedes recebeu seu nome da mitologia grega, inspirado no jovem príncipe troiano conhecido por sua beleza incomparável. Segundo a lenda, Zeus ficou encantado com Ganimedes e o levou para o Olimpo, onde ele se tornou copeiro dos deuses e teve a honra de servir néctar e ambrosia aos deuses do panteão grego. A escolha desse nome segue a tradição de batizar as luas de Júpiter com personagens mitológicos ligados ao deus, reforçando a conexão histórica entre astronomia e mitologia, e refletindo a importância de Ganimedes como a maior lua do Sistema Solar.</p>
+  </section>
+
+  <section>
+    <h2>Referências</h2>
+    <ul class="referencias">
+      <li>NASA. Ganymede: Moon of Jupiter. Disponível em: <a href="https://solarsystem.nasa.gov/moons/jupiter-moons/ganymede/overview/" target="_blank">https://solarsystem.nasa.gov/moons/jupiter-moons/ganymede/overview/</a>. Acesso em: 24 dez. 2025.</li>
+      <li>NASA/JPL. Juno Ganymede Flyby. Disponível em: <a href="https://www.nasa.gov/mission_pages/juno/news/juno-flyby-of-ganymede.html" target="_blank">https://www.nasa.gov/mission_pages/juno/news/juno-flyby-of-ganymede.html</a>. Acesso em: 24 dez. 2025.</li>
+      <li>WIKIPEDIA. Ganimedes (satélite). Disponível em: <a href="https://pt.wikipedia.org/wiki/Ganimedes_(sat%C3%A9lite)" target="_blank">https://pt.wikipedia.org/wiki/Ganimedes_(sat%C3%A9lite)</a>. Acesso em: 24 dez. 2025.</li>
+    </ul>
+  </section>
+</main>
+
+<!-- Botão Voltar Fixo -->
+<div class="botao-voltar">
+  <button onclick="history.back()">← Voltar</button>
+</div>
+
+</body>
+</html>

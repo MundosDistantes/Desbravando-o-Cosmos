@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Titã - Lua de Saturno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Roboto, Arial, sans-serif; }
+    body { min-height: 100vh; background: linear-gradient(180deg, #0b0f1a, #05070d); color: #e6e6e6; padding: 20px; }
+    main { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    header h1 { font-size: 2.5rem; color: #aad1ff; font-weight: bold; margin-bottom: 15px; }
+    .top-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.top-image img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+    .referencia { text-align: center; font-size: 0.85rem; color: #9a9a9a; margin-bottom: 30px; }
+    section { margin-bottom: 30px; }
+    section h2 { font-size: 1.8rem; color: #aad1ff; margin-bottom: 15px; }
+    section p { line-height: 1.7; color: #d4d4d4; margin-bottom: 15px; }
+    ul { list-style: none; padding-left: 0; }
+    li { margin-bottom: 8px; }
+    .referencias li { font-size: 0.9rem; color: #cfcfcf; margin-bottom: 8px; }
+    a { color: #9bbcff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Botão Voltar */
+    .botao-voltar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .botao-voltar button {
+      background: linear-gradient(45deg, #aad1ff, #5a9eff);
+      color: #05070d;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botao-voltar button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Titã - Lua de Saturno</h1>
+  </header>
+
+  <!-- Imagem Topo -->
+<div class="top-image">
+  <img
+    src="tita.webp"
+    loading="lazy"
+    decoding="async"
+    width="600"
+    height="600"
+    alt="Titã, lua de Saturno">
+</div>
+
+  <div class="referencia">
+  Fonte: NASA/JPL-Caltech/Space Science Institute (imagem em cores reais, processada). Disponível em:
+  <a href="https://commons.wikimedia.org/wiki/File:Titan_in_true_color.jpg" target="_blank" rel="noopener noreferrer">
+    commons.wikimedia.org
+  </a>. Acesso em: 24 dez. 2025.
+</div>
+
+  <!-- Introdução e História -->
+  <section>
+    <h2>Introdução e História</h2>
+    <p>Titã é a maior lua de Saturno e a segunda maior do Sistema Solar, descoberta em 1655 pelo astrônomo Christiaan Huygens. Seu estudo ganhou grande destaque com a missão Cassini–Huygens, que orbitou Saturno entre 2004 e 2017, revelando uma lua com uma atmosfera espessa e uma superfície complexa com lagos de hidrocarbonetos. Titã é o único satélite do Sistema Solar conhecido por possuir uma atmosfera densa e um ciclo de líquidos na superfície semelhante ao ciclo da água na Terra — mas com metano e etano em vez de água líquida.</p>
+  </section>
+
+  <!-- Características Físicas -->
+  <section>
+    <h2>Características Físicas: Diâmetro, Massa e Órbita</h2>
+    <p>Titã tem um diâmetro de aproximadamente 5.150 km, tornando-a maior que o planeta Mercúrio e quase do tamanho da maior lua do Sistema Solar, Ganimedes.</p>
+    <p>Orbita Saturno a uma distância média de cerca de 1,22 milhão de km, completando uma volta em cerca de 15,94 dias terrestres.</p>
+    <p>Sua densidade sugere uma mistura de rocha e gelo, com uma possível camada líquida interna abaixo da crosta sólida.</p>
+  </section>
+
+  <!-- Estrutura Interna e Geologia -->
+  <section>
+    <h2>Estrutura Interna e Geologia</h2>
+    <p>Titã possui uma crosta de gelo que encobre um interior complexo. Dados da Cassini–Huygens sugerem a presença de um oceano subterrâneo salgado abaixo da camada externa, embora aspectos da sua estrutura interna ainda sejam objeto de estudo.</p>
+    <p>A superfície mostra características terrenas surpreendentes: dunas, vales e regiões escavadas por líquidos, que se comportam de modo análogo ao ciclo hidrológico terrestre, mas com metano e etano como componentes principais.</p>
+  </section>
+
+  <!-- Missões Espaciais -->
+  <section>
+    <h2>Missões Espaciais</h2>
+    <p>A missão Cassini–Huygens foi a mais importante para Titã. Em 2005, o módulo Huygens pousou na superfície, fornecendo dados diretos sobre sua atmosfera e solo.</p>
+    <p>Futuras missões, como a <strong>Dragonfly</strong> da NASA, planejada para explorar o terreno e depositar instrumentos em diferentes locais da superfície, visam aprofundar a compreensão da química orgânica e da habitabilidade de Titã.</p>
+  </section>
+
+  <!-- Atmosfera e Exosfera -->
+  <section>
+    <h2>Atmosfera e Exosfera</h2>
+    <p>Titã tem uma atmosfera densa, composta principalmente de nitrogênio (≈95%), com metano e outros hidrocarbonetos. Esse denso “nevoeiro” alaranjado forma nuvens e chuva de metano que moldam sua superfície.</p>
+    <p>A pressão atmosférica na superfície é maior do que a da Terra, tornando Titã um dos poucos corpos do Sistema Solar com uma atmosfera substancial.</p>
+  </section>
+
+  <!-- Potencial de Habitabilidade -->
+  <section>
+    <h2>Potencial de Habitabilidade</h2>
+    <ul>
+      <li>💧 <strong>Condutos Líquidos:</strong> Titã é o único mundo além da Terra com líquidos estáveis na superfície sob forma de lagos e mares de metano e etano.</li>
+      <li>⚡ <strong>Fonte de Energia:</strong> A complexa química atmosférica, impulsionada pela luz solar e reações químicas com nitrogênio e metano, cria um ambiente energético ativo.</li>
+      <li>🧬 <strong>Ingredientes Químicos:</strong> Compostos orgânicos complexos presentes na atmosfera podem ser precursores de química pré‑biótica, embora a vida como a conhecemos não tenha sido detectada.</li>
+    </ul>
+    <p>Mesmo com seu ambiente frio e químico distinto da Terra, Titã é considerado um laboratório natural para estudar processos que podem ter sido importantes nos primórdios da vida em nosso próprio planeta.</p>
+  </section>
+
+  <!-- Curiosidades -->
+  <section>
+    <h2>Curiosidades</h2>
+    <p>Titã possui lagos e mares de metano líquido, notavelmente o grande mar Kraken Mare no hemisfério norte.</p>
+    <p>Sua atmosfera espessa e laranja é tão densa que esconde a superfície à observação direta sem instrumentos especiais.</p>
+    <p>Além de rios e lagos, Titã tem dunas de hidrocarbonetos e vales esculpidos por chuva de metano.</p>
+  </section>
+
+  <!-- Origem do Nome -->
+  <section>
+    <h2>Origem do Nome</h2>
+    <p>Titã recebeu seu nome da mitologia grega, inspirado nos Titãs — uma geração anterior de deuses que precedeu os olímpicos. Na tradição, os Titãs eram gigantes poderosos, filhos de Urano e Gaia, que governaram durante a era dourada antes de serem derrotados pelos deuses olímpicos. O nome foi escolhido por John Herschel, seguindo a tendência de nomear satélites de Saturno com figuras mitológicas ligadas à antiguidade clássica, reforçando a conexão entre cultura humana e a exploração do cosmos.</p>
+  </section>
+
+  <!-- Referências -->
+  <section>
+    <h2>Referências</h2>
+    <ul class="referencias">
+      <li>NASA. Titan Facts. Disponível em: <a href="https://science.nasa.gov/saturn/moons/titan/facts/" target="_blank">https://science.nasa.gov/saturn/moons/titan/facts/</a>. Acesso em: 24 dez. 2025.</li>
+      <li>Britannica. Titan (astronomy). Disponível em: <a href="https://www.britannica.com/place/Titan-astronomy" target="_blank">https://www.britannica.com/place/Titan-astronomy</a>. Acesso em: 24 dez. 2025.</li>
+      <li>WIKIPEDIA. Titã (satélite). Disponível em: <a href="https://pt.wikipedia.org/wiki/Tit%C3%A3_(sat%C3%A9lite)" target="_blank">https://pt.wikipedia.org/wiki/Tit%C3%A3_(sat%C3%A9lite)</a>. Acesso em: 24 dez. 2025.</li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- Botão Voltar Fixo -->
+<div class="botao-voltar">
+  <button onclick="history.back()">← Voltar</button>
+</div>
+
+</body>
+</html>
